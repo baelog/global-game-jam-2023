@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelectObjectMouse : MonoBehaviour
 {
-    public GameObject mainCamera;
+    // public Camera mainCamera;
     Renderer render;
     // Start is called before the first frame update
     void Start()
@@ -28,8 +28,12 @@ public class SelectObjectMouse : MonoBehaviour
         render.material.color = Color.white;
     }
 
-    void OnMouseClick()
+    void OnMouseDown()
     {
-        UintSelected component = mainCamera.GetComponent<UintSelected>();
+        if (!Input.GetMouseButtonDown(0))
+            return;
+        Debug.Log("going to the camera");
+        UintSelected component = Camera.main.GetComponent<UintSelected>();
+        component.setObject(this.gameObject);
     }
 }
