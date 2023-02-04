@@ -18,16 +18,16 @@ public class cameraController : MonoBehaviour
         Vector3 pos = transform.position;
         Vector3 mousePos = Input.mousePosition;
 
-        if (Input.GetKey("w") || mousePos.y >= Screen.height - panBorderThickness) {
+        if (mousePos.y >= Screen.height - panBorderThickness) {
             pos.z += panSpeed * Time.deltaTime * (pos.y / 10); 
         }
-        if (Input.GetKey("s") || mousePos.y <= panBorderThickness) {
+        if (mousePos.y <= panBorderThickness) {
             pos.z -= panSpeed * Time.deltaTime * (pos.y / 10);
         }
-        if (Input.GetKey("d") || mousePos.x >= Screen.width - panBorderThickness) {
+        if (mousePos.x >= Screen.width - panBorderThickness) {
             pos.x += panSpeed * Time.deltaTime * (pos.y / 10);
         }
-        if (Input.GetKey("a") || mousePos.x <= panBorderThickness) {
+        if (mousePos.x <= panBorderThickness) {
             pos.x -= panSpeed * Time.deltaTime * (pos.y / 10);
         }
 
