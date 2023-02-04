@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UintSelected : MonoBehaviour
 {
-    public GameObject objectList;
+    public GameObject stockedObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +17,13 @@ public class UintSelected : MonoBehaviour
         
     }
 
-    void setOject(GameObject objectToMove)
+    public void setObject(GameObject objectToMove)
     {
-        objectList = objectToMove;
+        stockedObject = objectToMove;
+    }
+
+    public GameObject getObject()
+    {
+        return stockedObject;
     }
 }
