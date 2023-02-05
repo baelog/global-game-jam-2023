@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389833293914631576}
   m_LocalRotation: {x: -0, y: 0.5786572, z: -0, w: 0.8155709}
-  m_LocalPosition: {x: -0.067, y: 0, z: 0.191}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.20299998, y: 0, z: -0.016000003}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3899520030807063256}
@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 3899520030809930488}
   - component: {fileID: 3899520030808963128}
   - component: {fileID: 6424358202076788469}
+  - component: {fileID: -8416489074368904324}
   m_Layer: 0
   m_Name: Flower Pink Lavender
   m_TagString: Untagged
@@ -126,7 +127,7 @@ Transform:
   m_GameObject: {fileID: 3899520030806763256}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.156, y: 0, z: -0.213}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5081028597388666383}
@@ -199,6 +200,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8ea980fdc4aa5e749b000c1a0d4b9bbc, type: 3}
+--- !u!114 &-8416489074368904324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3899520030806763256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c1c0b87b1ac8f4f95eccf96511076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 2
+  id: 4
 --- !u!1 &3944018038563242962
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,8 +241,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3944018038563242962}
   m_LocalRotation: {x: -0, y: -0.77336884, z: -0, w: 0.6339563}
-  m_LocalPosition: {x: 0.211, y: 0, z: 0.282}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.075, y: 0, z: 0.075}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3899520030807063256}
@@ -324,8 +339,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6829311639675031676}
   m_LocalRotation: {x: -0, y: -0.3420719, z: -0, w: 0.93967384}
-  m_LocalPosition: {x: 0.265, y: 0, z: 0.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.12900001, y: 0, z: -0.147}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3899520030807063256}
