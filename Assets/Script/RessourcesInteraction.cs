@@ -56,7 +56,7 @@ public class RessourcesInteraction : MonoBehaviour
             return;
 
         WorkerInventory inventory = unit.GetComponent<WorkerInventory>();
-        inventory.addItem(id, 1);
+        inventory.addItem(id - 1, 1);
         // Destroy(this.gameObject);
         state = 1;
         objectColider.enabled = !objectColider.enabled;
