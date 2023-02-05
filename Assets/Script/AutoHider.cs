@@ -48,35 +48,6 @@ public class AutoHider : MonoBehaviour
                     }
                 }
             }
-            // else
-            // {
-            //     if (!doShow) 
-            //     {
-            //         if (child.transform.gameObject.activeInHierarchy)
-            //         {
-            //             child.transform.gameObject.SetActive(false);
-            //         }
-            //     }
-            //     else 
-            //     {
-            //         if (distance < maxDistance) 
-            //         {
-            //             if (!child.transform.gameObject.activeInHierarchy && !doScale) 
-            //             {
-            //                 child.transform.gameObject.SetActive(true);
-            //             }
-            //             else if (!child.transform.gameObject.activeInHierarchy && doScale) 
-            //             {
-            //                 child.transform.gameObject.SetActive(true);
-            //                 child.transform.GetComponent<Scaler>().ToggleScale(true);
-            //             }
-            //         }
-            //         else
-            //         {
-            //             child.transform.gameObject.SetActive(false);
-            //         }
-            //     }
-            // }
         }
     }
 }
