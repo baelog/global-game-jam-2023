@@ -22,7 +22,11 @@ public class PrintRessources : MonoBehaviour
     void Update()
     {
         int[] ressourcesList = inventory.getInventory();
-        firstRessourceText.text = ressourcesList[recipe.getFristId()] + "/"  + recipe.getFrist();
-        secondRessourceText.text = ressourcesList[recipe.getSecondId()] + "/" + recipe.getSecond();
+        firstRessourceText.text = recipe.getFristId() + ": " + ressourcesList[recipe.getFristId()] + "/"  + recipe.getFrist();
+        secondRessourceText.text = recipe.getSecondId() + ": " + ressourcesList[recipe.getSecondId()] + "/" + recipe.getSecond();
+        if (ressourcesList[recipe.getFristId()] >= recipe.getFrist() && ressourcesList[recipe.getSecondId()] >=recipe.getSecond()) {
+            recipe.updateNumber();
+            recipe.generateRecipe();
+        }
     }
 }

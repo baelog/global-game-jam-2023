@@ -27,7 +27,7 @@ public class CreateRecipe : MonoBehaviour
     public void generateRecipe()
     {
         firstRessource = Random.Range(1, startNumber);
-        secondRessource = startNumber - secondRessource;
+        secondRessource = startNumber - firstRessource;
         firstRessourceId = Random.Range(1, ressourcesNumber); 
         do {
             secondRessourceId = Random.Range(1, ressourcesNumber);
